@@ -6,7 +6,7 @@ export function validateName(name){
     ]
 
     for(const condition of validNameConditions){
-        if(!condition.check.test(password))
+        if(condition.check.test(name))
             return { isValid:false, message:condition.message }
     }
 
