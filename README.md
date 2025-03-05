@@ -23,13 +23,13 @@ This backend assignment focuses on implementing a User Authentication System usi
 To run this project, you will need to add the following environment variables to your .env file
 
 
-`PORT` = 8000
+```
+PORT = 8000
 
-`URL_DB` = "mongodb://localhost:27017/userAuthDB"
+URL_DB = "mongodb://localhost:27017/userAuthDB"
 
-`SECRET_KEY` = 'Your_JWT_Secret_Key'
-
-
+SECRET_KEY = 'Your_JWT_Secret_Key'
+```
 
 ## Run Locally
 
