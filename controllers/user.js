@@ -116,7 +116,7 @@ export async function handleUserLogin(req,res){
         const userToken = signUserToken(user,req.ip)
         res.cookie("userAuthToken",userToken,{maxAge:24*3600000*7,httpOnly:true})
 
-        return res.status(200).json({message:"Login Successful"})
+        return res.status(200).json({message:"Login Successful, Cookies Created with JWT Token"})
 
     }catch(error){
         return res.status(500).json({message:"Error occured during login",error:`${error}`})
