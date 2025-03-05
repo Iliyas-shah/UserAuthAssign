@@ -6,7 +6,13 @@ export async function handleUserSignup(req,res){
     const {name, email, password} = req.body
 
     //Check if email Already Exist
-    const isUserPresent = users.findOne({email:email})
+    try{
+        const isUserPresent = users.findOne({email:email})
+    }catch(error){
+        console.log("Error occured while checking existing user from mongodb")
+        res.status(500).json({message:"Error Occured with mongodb",error:error})
+    }
+    
 
     if(isUserPresent)
         return res.status(400).send("User Already Registered, Please Login")
