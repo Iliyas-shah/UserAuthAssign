@@ -75,6 +75,9 @@ SECRET_KEY = 'Your_JWT_Secret_Key'
 
 ## API Reference
 
+#### Note:
+You can use Postman or any other API testing tool to test the endpoints, especially for POST and PATCH requests, as these methods are not supported directly through the browser's address bar.
+
 #### Register User
 
 ```http
