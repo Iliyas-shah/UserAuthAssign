@@ -19,7 +19,7 @@ connectDB(mongo_url)
 
 //API for signup, login, reset Password
 app.get('/',(req,res)=>{
-    res.json({message:"Backend Deployed"})
+    return res.json({message:"Backend Deployed"})
 })
 app.use('/api/user',userRouter)
 
