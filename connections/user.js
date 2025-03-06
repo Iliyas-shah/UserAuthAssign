@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
 
-export function connectDB(urlDB){
-    return mongoose.connect(urlDB)
+export function connectDB(mongo_url){
+    return mongoose.connect(mongo_url)
 }

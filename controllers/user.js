@@ -5,7 +5,7 @@ import { validateName,validatePassword } from "../validations/user.js"
 import { signUserToken } from "../Auth/user.js"
 export async function handleUserSignup(req,res){
 
-    let {name, email, password} = req.body
+    let {name, email, password} = req.query
 
     //check if all the required fields are provided
     if(!name || !email || !password)
@@ -75,7 +75,7 @@ export async function handleUserSignup(req,res){
 
 
 export async function handleUserLogin(req,res){
-    let {email,password} = req.body
+    let {email,password} = req.query
 
     //check if all the required fields are provided
     if(!email || !password)
@@ -125,7 +125,7 @@ export async function handleUserLogin(req,res){
 
 
 export async function handleResetPassword(req,res){
-    const { password } = req.body
+    const { password } = req.query
     const userDetails = req.userDetails
     
     //check if password is provided or not

@@ -26,7 +26,7 @@ To run this project, you will need to add the following environment variables to
 ```
 PORT = 8000
 
-URL_DB = "mongodb://localhost:27017/userAuthDB"
+MONGO_URL = "mongodb://localhost:27017/userAuthDB"
 
 SECRET_KEY = 'Your_JWT_Secret_Key'
 ```
@@ -58,17 +58,11 @@ Start the server
 ```
 
 
-# Testing With Postman 
-When testing API endpoints using Postman, ensure that you provide input in the Body section using the x-www-form-urlencoded format.
-
-
-
 
 ## API Reference
 
 #### Register User
 
-##### If using Postman then use body section to give input of the format x-www-form-urlencoded
 ```http
   POST /api/user/signup
 ```

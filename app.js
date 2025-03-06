@@ -6,15 +6,14 @@ import cookieParser from 'cookie-parser'
 
 dotenv.config()
 const app = express()
-const port = process.env.PORT
-const urlDB = process.env.URL_DB
+const port = process.env.PORT || 8000
+const mongo_url = process.env.MONGO_URL
 
 //middlewares
-app.use(express.urlencoded({extended:true}))
 app.use(cookieParser())
 
 //connect Database
-connectDB(urlDB)
+connectDB(mongo_url)
 .then(()=>console.log(`Database Connected`))
 .catch((err)=>console.log(err))
 
