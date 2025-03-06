@@ -18,6 +18,9 @@ connectDB(mongo_url)
 .catch((err)=>console.log(err))
 
 //API for signup, login, reset Password
+app.get('/',(req,res)=>{
+    res.json({message:"Backend Deployed"})
+})
 app.use('/api/user',userRouter)
 
 //starting server
