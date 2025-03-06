@@ -83,7 +83,7 @@ You can use Postman or any other API testing tool to test the endpoints, especia
 
 ##### API 1:  
 ```http
-  POST /
+  GET /
 ```
 OUTPUT:
 ```http
@@ -94,7 +94,7 @@ OUTPUT:
 
 ##### API 2:  
 ```http
-  POST /api/user
+  GET /api/user
 ```
 OUTPUT:
 ```http
