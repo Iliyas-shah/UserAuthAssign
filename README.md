@@ -64,7 +64,7 @@ Start the server
 #### Register User
 
 ```http
-  POST /api/user/signup
+  POST /api/user/signup?name=<user_name>&email=<user_email>&password=<user_password>
 ```
 
 | Parameter | Type     | Description                |
@@ -76,7 +76,7 @@ Start the server
 #### User Login
 
 ```http
-  GET /api/user/login
+  GET /api/user/login?email=<user_email>&password=<user_password>
 ```
 
 | Parameter | Type     | Description                       |
@@ -87,10 +87,12 @@ Start the server
 #### Reset Password for Authenticated User
 
 ```http
-  PATCH /api/user/resetpass
+  PATCH /api/user/resetpass?password=<new_password>
 ```
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `password`      | `string` | **Required**.|
 
+### Note:
+Replace <user_name>, <user_email>, <user_password>, <new_password> with the actual values.
