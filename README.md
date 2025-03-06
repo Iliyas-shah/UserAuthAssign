@@ -31,7 +31,7 @@ MONGO_URL = "mongodb://localhost:27017/userAuthDB"
 SECRET_KEY = 'Your_JWT_Secret_Key'
 ```
 
-## Run Locally
+## Local Setup
 
 Clone the project
 
