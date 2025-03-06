@@ -51,7 +51,21 @@ Install dependencies
   npm install
 ```
 
-Start the server
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+
+```
+PORT = 8000
+
+MONGO_URL = "mongodb://localhost:27017/userAuthDB"
+
+SECRET_KEY = 'Your_JWT_Secret_Key'
+```
+
+
+## Start the server
 
 ```bash
   npm start
